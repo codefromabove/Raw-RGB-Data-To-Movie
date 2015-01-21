@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		669EC7EC1A70196E003B7D37 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 669EC7EB1A70196E003B7D37 /* AppDelegate.mm */; };
+		669EC7EE1A70196E003B7D37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 669EC7ED1A70196E003B7D37 /* main.m */; };
+		669EC7F01A70196E003B7D37 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 669EC7EF1A70196E003B7D37 /* Images.xcassets */; };
+		669EC7F31A70196E003B7D37 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 669EC7F11A70196E003B7D37 /* MainMenu.xib */; };
+		669EC8091A701BEC003B7D37 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669EC8081A701BEC003B7D37 /* AVFoundation.framework */; };
+		669EC80B1A701C02003B7D37 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669EC80A1A701C02003B7D37 /* CoreMedia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		669EC7E51A70196E003B7D37 /* RawRGBDataToMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RawRGBDataToMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		669EC7E91A70196E003B7D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		669EC7EA1A70196E003B7D37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		669EC7EB1A70196E003B7D37 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		669EC7ED1A70196E003B7D37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		669EC7EF1A70196E003B7D37 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		669EC7F21A70196E003B7D37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		669EC8081A701BEC003B7D37 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		669EC80A1A701C02003B7D37 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		669EC7E21A70196E003B7D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				669EC80B1A701C02003B7D37 /* CoreMedia.framework in Frameworks */,
+				669EC8091A701BEC003B7D37 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		669EC7DC1A70196E003B7D37 = {
+			isa = PBXGroup;
+			children = (
+				669EC80A1A701C02003B7D37 /* CoreMedia.framework */,
+				669EC8081A701BEC003B7D37 /* AVFoundation.framework */,
+				669EC7E71A70196E003B7D37 /* RawRGBDataToMovie */,
+				669EC7E61A70196E003B7D37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		669EC7E61A70196E003B7D37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				669EC7E51A70196E003B7D37 /* RawRGBDataToMovie.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		669EC7E71A70196E003B7D37 /* RawRGBDataToMovie */ = {
+			isa = PBXGroup;
+			children = (
+				669EC7EA1A70196E003B7D37 /* AppDelegate.h */,
+				669EC7EB1A70196E003B7D37 /* AppDelegate.mm */,
+				669EC7EF1A70196E003B7D37 /* Images.xcassets */,
+				669EC7F11A70196E003B7D37 /* MainMenu.xib */,
+				669EC7E81A70196E003B7D37 /* Supporting Files */,
+			);
+			path = RawRGBDataToMovie;
+			sourceTree = "<group>";
+		};
+		669EC7E81A70196E003B7D37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				669EC7E91A70196E003B7D37 /* Info.plist */,
+				669EC7ED1A70196E003B7D37 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		669EC7E41A70196E003B7D37 /* RawRGBDataToMovie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 669EC8021A70196E003B7D37 /* Build configuration list for PBXNativeTarget "RawRGBDataToMovie" */;
+			buildPhases = (
+				669EC7E11A70196E003B7D37 /* Sources */,
+				669EC7E21A70196E003B7D37 /* Frameworks */,
+				669EC7E31A70196E003B7D37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RawRGBDataToMovie;
+			productName = RawRGBDataToMovie;
+			productReference = 669EC7E51A70196E003B7D37 /* RawRGBDataToMovie.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		669EC7DD1A70196E003B7D37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Code From Above, LLC";
+				TargetAttributes = {
+					669EC7E41A70196E003B7D37 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 669EC7E01A70196E003B7D37 /* Build configuration list for PBXProject "RawRGBDataToMovie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 669EC7DC1A70196E003B7D37;
+			productRefGroup = 669EC7E61A70196E003B7D37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				669EC7E41A70196E003B7D37 /* RawRGBDataToMovie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		669EC7E31A70196E003B7D37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				669EC7F01A70196E003B7D37 /* Images.xcassets in Resources */,
+				669EC7F31A70196E003B7D37 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		669EC7E11A70196E003B7D37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				669EC7EE1A70196E003B7D37 /* main.m in Sources */,
+				669EC7EC1A70196E003B7D37 /* AppDelegate.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		669EC7F11A70196E003B7D37 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				669EC7F21A70196E003B7D37 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		669EC8001A70196E003B7D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		669EC8011A70196E003B7D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		669EC8031A70196E003B7D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RawRGBDataToMovie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		669EC8041A70196E003B7D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RawRGBDataToMovie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		669EC7E01A70196E003B7D37 /* Build configuration list for PBXProject "RawRGBDataToMovie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				669EC8001A70196E003B7D37 /* Debug */,
+				669EC8011A70196E003B7D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		669EC8021A70196E003B7D37 /* Build configuration list for PBXNativeTarget "RawRGBDataToMovie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				669EC8031A70196E003B7D37 /* Debug */,
+				669EC8041A70196E003B7D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 669EC7DD1A70196E003B7D37 /* Project object */;
+}
