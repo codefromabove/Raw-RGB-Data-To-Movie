@@ -119,7 +119,10 @@ static void ReleaseCVPixelBufferForCVPixelBufferCreateWithBytes(void *releaseRef
 #endif // USE_KEY_VALUE_OBSERVATION
 
 
-
+    //
+    // Various choices for codec...Note that not all combinations of
+    // codec and movie type are compatible...
+    //
 #define VID_USE_QUICKTIME_MOVIE 0
 
 #if VID_USE_QUICKTIME_MOVIE
@@ -309,6 +312,5 @@ static void ReleaseCVPixelBufferForCVPixelBufferCreateWithBytes(void *releaseRef
 #endif // USE_KEY_VALUE_OBSERVATION
 
 }
-
 
 @end
