@@ -82,7 +82,7 @@ static void ReleaseCVPixelBufferForCVPixelBufferCreateWithBytes(void *releaseRef
     //
     if (!_savePanel)
     {
-        NSArray *fileTypesArray = [NSArray arrayWithObjects:@"mov", nil];
+        NSArray *fileTypesArray = [NSArray arrayWithObjects:@"mov", @"mp4", nil];
 
         _savePanel = [NSSavePanel savePanel];
         [_savePanel setAllowedFileTypes:fileTypesArray];
@@ -141,7 +141,7 @@ static void ReleaseCVPixelBufferForCVPixelBufferCreateWithBytes(void *releaseRef
                                      AVVideoCompressionPropertiesKey:@{
                                              AVVideoAverageBitRateKey:[NSNumber numberWithInt:(VID_WIDTH * VID_HEIGHT * 24)],
                                              AVVideoMaxKeyFrameIntervalKey:@(150),
-                                             AVVideoProfileLevelKey:AVVideoProfileLevelH264BaselineAutoLevel,
+                                             AVVideoProfileLevelKey:AVVideoProfileLevelH264HighAutoLevel,
                                              AVVideoAllowFrameReorderingKey:@NO,
                                              AVVideoH264EntropyModeKey:AVVideoH264EntropyModeCAVLC,
                                              AVVideoExpectedSourceFrameRateKey:@(30),
@@ -151,7 +151,10 @@ static void ReleaseCVPixelBufferForCVPixelBufferCreateWithBytes(void *releaseRef
     NSDictionary *outputSettings = @{
                                      AVVideoCodecKey :AVVideoCodecJPEG,
                                      AVVideoWidthKey :@(VID_WIDTH),
-                                     AVVideoHeightKey:@(VID_HEIGHT)
+                                     AVVideoHeightKey:@(VID_HEIGHT),
+                                     AVVideoCompressionPropertiesKey:@{
+                                             AVVideoQualityKey:@(0.9)
+                                             }
                                      };
 #endif
 #endif // VID_USE_QUICKTIME_MOVIE
@@ -203,7 +206,7 @@ static void ReleaseCVPixelBufferForCVPixelBufferCreateWithBytes(void *releaseRef
         // array. Here, we fake having padded rows by adding 5 pixels' worth
         // of space in each row. This just makes sure we're communicating this
         // all correctly with the writer. Allocating on the heap to ensure we
-        // dont' run into any stack-allocation issues...
+        // don't run into any stack-allocation issues...
         //
         long size = (VID_WIDTH + 5) * VID_HEIGHT * 4;
         UInt8 *data = new UInt8[size];
