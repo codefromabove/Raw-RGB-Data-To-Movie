@@ -88,7 +88,7 @@ static void ReleaseCVPixelBufferForCVPixelBufferCreateWithBytes(void *releaseRef
         [_savePanel setAllowedFileTypes:fileTypesArray];
     }
 
-    if ([_savePanel runModal] == NSFileHandlingPanelOKButton)
+    if ([_savePanel runModal] == NSModalResponseOK)
     {
         _writeURL = [_savePanel URL];
         NSLog(@"Selected file: %@", _writeURL);
@@ -135,7 +135,7 @@ static void ReleaseCVPixelBufferForCVPixelBufferCreateWithBytes(void *releaseRef
 
 #if 1
     NSDictionary *outputSettings = @{
-                                     AVVideoCodecKey :AVVideoCodecH264,
+        AVVideoCodecKey :AVVideoCodecTypeH264,
                                      AVVideoWidthKey :[NSNumber numberWithInt:VID_WIDTH],
                                      AVVideoHeightKey:[NSNumber numberWithInt:VID_HEIGHT],
                                      AVVideoCompressionPropertiesKey:@{
