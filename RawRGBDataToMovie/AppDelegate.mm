@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import <AVFoundation/AVFoundation.h>
+#import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
 
 
 #define VID_WIDTH  512
@@ -82,10 +83,10 @@ static void ReleaseCVPixelBufferForCVPixelBufferCreateWithBytes(void *releaseRef
     //
     if (!_savePanel)
     {
-        NSArray *fileTypesArray = [NSArray arrayWithObjects:@"mov", @"mp4", nil];
+        NSArray<UTType *> *fileTypesArray = @[UTTypeQuickTimeMovie, UTTypeMPEG4Movie];
 
         _savePanel = [NSSavePanel savePanel];
-        [_savePanel setAllowedFileTypes:fileTypesArray];
+        [_savePanel setAllowedContentTypes:fileTypesArray];
     }
 
     if ([_savePanel runModal] == NSModalResponseOK)
